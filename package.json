@@ -1,12 +1,13 @@
 {
   "name": "whoami",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pulls certain data from http header and sends back in JSON format",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jshint **.js",
+    "serve": "npm test -s && npm start"
   },
-  "author": "",
+  "author": "Jon Lucas",
   "license": "MIT",
   "devDependencies": {
     "jshint": "^2.9.1"

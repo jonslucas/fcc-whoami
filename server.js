@@ -2,7 +2,7 @@
     'use strict';
 
     const express = require('express');
-    const routes = require(process.cwd() + 'app/routes');
+    const routes = require(process.cwd() + '/app/routes');
 
     const app = express();
     routes(app);
@@ -11,9 +11,6 @@
 
     app.listen(port, ()=>{
         console.log('App listening on port '+port);
-    })
-
-
-
+    });
 
 })();
