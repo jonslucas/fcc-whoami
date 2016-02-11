@@ -5,6 +5,7 @@
     const routes = require(process.cwd() + '/app/routes');
 
     const app = express();
+    app.enable('trust proxy');
     routes(app);
 
     const port = process.env.PORT || 3000;

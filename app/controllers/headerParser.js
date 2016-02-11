@@ -3,6 +3,8 @@
 
     function Parser() {
         this.whoAmI = (req, res) => {
+            console.log(req.ip);
+            console.log(req.ips);
             const ip = req.ip.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/)[0],
                 lang = req.get('Accept-Language').split(';')[0].split(',')[0],
                 userA = req.get('User-Agent').split(/[\(\)]/)[1];
