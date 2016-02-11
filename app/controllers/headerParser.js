@@ -7,7 +7,7 @@
                 lang = req.get('Accept-Language').split(';')[0].split(',')[0],
                 userA = req.get('User-Agent').split(/[\(\)]/)[1];
             res.json({
-                "ip": ip,
+                "ipv4 address": ip,
                 "language":lang,
                 "software": userA
             });
